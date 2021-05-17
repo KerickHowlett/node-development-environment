@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+    node-development-environment:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        env_file:
+            - post-build-env/node-development.env
+            - post-build-env/shared.env
+        image: node-development-environment-${BUILD_VERSION}
+        container_name: node-development-environment
+        hostname: node-development-environment
+        init: true
+        privileged: true
+        volumes:
+            - ..:/workspace:cached
+            - ./logs:/home/node/logs:delegated
+            - /var/run/docker.sock:/var/run/docker.sock
+            - $DOCKER_DATA:/var/lib/docker
+        networks:
+            - node-development-network
+        links:
+            - mongo-database
+            - redis-cache
+
+    mongo-database:
+        image: mongo:${MONGO_IMAGE_VARIANT}
+        env_file:
+            - post-build-env/node-development.env
+            - post-build-env/shared.env
+        deploy:
+            placement:
+                constraints:
+                    - 'node.role == manager'
+        container_name: node-development-environment-mongo-database
+        hostname: ${MONGO_HOST}
+        networks:
+            - node-development-network
+        volumes:
+            - node-development-environment-data:/data/db:delegated
+        restart: always
+
+    redis-cache:
+        build:
+            context: .
+            dockerfile: ./redis/Dockerfile
+            args:
+                REDIS_IMAGE_VARIANT: ${REDIS_IMAGE_VARIANT}
+        env_file:
+            - post-build-env/redis.env
+            - post-build-env/shared.env
+        image: redis-rdb-development-environment
+        container_name: node-development-environment-redis-cache
+        hostname: ${REDIS_HOST}
+        networks:
+            - node-development-network
+        volumes:
+            - node-development-environment-data:/cache:delegated
+        restart: always
+
+volumes:
+    node-development-environment-data:
+        name: node-development-environment-data
+        driver: local
+
+networks:
+    node-development-network:
+        name: node-development-network
+        driver: bridge
