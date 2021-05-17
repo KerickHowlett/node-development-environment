@@ -5,6 +5,9 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+            args:
+                USER_GID: ${USER_GID}
+                USER_UID: ${USER_UID}
         env_file:
             - post-build-env/node-development.env
             - post-build-env/shared.env
@@ -15,7 +18,6 @@ services:
         privileged: true
         volumes:
             - ..:/workspace:cached
-            - ./logs:/home/node/logs:delegated
             - /var/run/docker.sock:/var/run/docker.sock
             - $DOCKER_DATA:/var/lib/docker
         networks:

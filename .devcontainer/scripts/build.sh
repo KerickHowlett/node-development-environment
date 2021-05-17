@@ -18,6 +18,6 @@ cat /home/tmp/build_config.sh
 
 /bin/bash /home/tmp/libraries/redis.sh "${USE_REDIS}" "${REDIS_TOOLS_VERSION}"
 
-/bin/bash /home/tmp/libraries/node-package-managers.sh "${KEEP_NVM}" "${UPGRADE_GLOBALS}" "${USE_ANGULAR}" "${USE_NESTJS}" "${USE_NRWL}" "${USE_IONIC}"
+/bin/bash /home/tmp/libraries/node-package-managers.sh "${KEEP_NVM}" "${UPGRADE_GLOBALS}" "${USE_ANGULAR}" "${USE_NESTJS}" "${USE_NRWL}" "${USE_IONIC}" "${USERNAME}"
 
 /bin/bash /home/tmp/libraries/clean-house.sh

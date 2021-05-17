@@ -8,6 +8,7 @@ USE_ANGULAR=${2:-"false"}
 USE_NESTJS=${3:-"false"}
 USE_NRWL=${4:-"false"}
 USE_IONIC=${5:-"false"}
+USERNAME=${6:-"node"}
 
 remove-nvm()
 {
@@ -120,6 +121,9 @@ fi
 # Configures Yarn.
 yarn config set ignore-engines true
 yarn config set workspaces-experimental true
+
+yarn config set cache-folder /home/node/.cache
+
 echo "Configured Yarn for development:"
 yarn config list
 
