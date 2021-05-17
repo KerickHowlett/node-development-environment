@@ -27,7 +27,7 @@ As of the date of this commit -- May 15, 2021 -- I've developed this using Docke
 
 1. Clone or download this repo into its own private directory.
 2. Copy the `.devcontainer` directory over to your project.
-3. Configure the details how you want (more details on those customizable features later on) in the `.env` file that's located in the `.devcontainer` directory.
+3. Configure the details how you want (more details on those customizable features later on) in the following file: `.devcontainer/scripts/build_config.sh` and `.devcontainer/.env`.
 4. Make sure your Docker daemon is running and then open your project in Visual Studio code.
 5. Press `Ctrl + Shift + P` to open up text field.
 6. Search for `Remote-Containers: Rebuild and Reopen Containers`.
@@ -125,7 +125,6 @@ There are also other configurable options for what global command line tools are
 | @ionic/cli     | $USE_IONIC        | false   |
 | cordova        | $USE_IONIC        | false   |
 
-
 ### MongoDB
 
 By default, this DevContainer comes setup with MongoDB straight out of the box. Although, if you wish to remove it, simply comment out the sections involving MongoDB from the `docker-compose.yml` file and set `USE_MONGO` to false.
@@ -144,7 +143,7 @@ By default, this DevContainer comes setup with MongoDB straight out of the box. 
 
 *`MONGO_VARIANT` is to depict the version of the MongoDB command line tools you wish to use.
 
-### Redis
+### Redis Server
 
 By default, this DevContainer comes setup with Redis straight out of the box. Although, if you wish to remove it, simply comment out the sections involving Redis from the `docker-compose.yml` file and set `USE_REDIS` to false.
 
@@ -186,11 +185,10 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/KerickHowlett](https://github.com/KerickHowlett)
 
-
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b feature/fooBar`)
+2. Create your feature branch off the development branch. (`git checkout -b feature/fooBar development`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
