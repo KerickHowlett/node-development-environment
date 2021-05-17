@@ -27,30 +27,43 @@ if [ "${PACKAGES_ALREADY_INSTALLED}" != "true" ]; then
 
     PACKAGES_LIST="\
         apt-transport-https \
-        bash-completion curl \
+        bash-completion \
         bzip2 \
         ca-certificates \
-        net-tools \
-        git \
-        iptables \
-        gcc \
+        curl \
         g++ \
+        gcc \
+        git \
         gnupg2 \
-        libfontconfig \
+        iptables \
+        libfontconfig1 \
         lsb-release \
+        libgtk2.0-0 \
+        libgtk-3-0 \
+        libgbm-dev \
+        libnotify-dev \
+        libgconf-2-4 \
+        libnss3 \
+        libxss1 \
+        libasound2 \
+        libxtst6 \
         lxc \
         make \
+        net-tools \
         pigz \
         python2.7 \
         python-pip \
         python3-pip \
-        openssh-server"
+        openssh-server \
+        xauth \
+        xvfb"
 
     apt-get-update-if-needed
 
-    echo "Packages to verify are installed: ${PACKAGE_LIST}"
-    apt-get -y install --no-install-recommends ${PACKAGE_LIST}
+    echo "Packages to verify are installed: ${PACKAGES_LIST}"
+    apt-get -y install --no-install-recommends ${PACKAGES_LIST}
     PACKAGES_ALREADY_INSTALLED="true"
+
 
 fi
 
