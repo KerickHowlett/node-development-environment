@@ -1,0 +1,20 @@
+{
+    "eslint": {
+        "eslint.options": {
+            "jshint.enable": false
+        }
+    },
+    "git": {
+        "git.ignoreLimitWarning": true
+    },
+    "terminal": {
+        "terminal.integrated.defaultProfile.linux": "/bin/bash"
+    },
+    "stylelint": {
+        "stylelint": {
+            "packageManager": "yarn",
+            "configBasedir": ".stylelintrc.json",
+            "configFile": ".stylelintrc.json"
+        }
+    }
+}

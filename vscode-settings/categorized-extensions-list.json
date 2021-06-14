@@ -1,0 +1,212 @@
+{
+    "*": [
+        [
+            "ahmadalli.vscode-nginx-conf",
+            "akamud.vscode-theme-onedark",
+            "alefragnani.project-manager",
+            "bierner.github-markdown-preview",
+            "bierner.markdown-checkbox",
+            "bierner.markdown-emoji",
+            "bierner.markdown-preview-github-styles",
+            "bierner.markdown-yaml-preamble",
+            "christian-kohler.path-intellisense",
+            "chrmarti.regex",
+            "CodeStream.codestream",
+            "codezombiech.gitignore",
+            "CoenraadS.bracket-pair-colorizer",
+            "cschleiden.vscode-github-actions",
+            "DavidAnson.vscode-markdownlint",
+            "dbaeumer.vscode-eslint",
+            "docsmsft.docs-markdown",
+            "doggy8088.quicktype-refresh",
+            "donjayamanne.git-extension-pack",
+            "donjayamanne.githistory",
+            "drKnoxy.eslint-disable-snippets",
+            "eamodio.gitlens",
+            "EditorConfig.EditorConfig",
+            "equinusocio.vsc-material-theme-icons",
+            "esbenp.prettier-vscode",
+            "ExodiusStudios.comment-anchors",
+            "felipecaputo.git-project-manager",
+            "firefox-devtools.vscode-firefox-debug",
+            "fireside21.cshtml",
+            "formulahendry.auto-close-tag",
+            "formulahendry.auto-complete-tag",
+            "formulahendry.auto-rename-tag",
+            "formulahendry.code-runner",
+            "foxundermoon.shell-format",
+            "gamunu.vscode-yarn",
+            "gimenete.github-linker",
+            "GitHub.vscode-pull-request-github",
+            "hilleer.yaml-plus-json",
+            "humao.rest-client",
+            "IBM.output-colorizer",
+            "ipedrazas.kubernetes-snippets",
+            "jack89ita.open-file-from-path",
+            "jakebathman.nginx-log-highlighter",
+            "johnpapa.read-time",
+            "johnpapa.winteriscoming",
+            "kameshkotwani.google-search",
+            "kenhowardpdx.vscode-gist",
+            "kisstkondoros.vscode-gutter-preview",
+            "KnisterPeter.vscode-commitizen",
+            "KnisterPeter.vscode-github",
+            "lacroixdavid1.vscode-format-context-menu",
+            "lunuan.kubernetes-templates",
+            "MariusAlchimavicius.json-to-ts",
+            "mariusschulz.yarn-lock-syntax",
+            "mechatroner.rainbow-csv",
+            "meganrogge.template-string-converter",
+            "mhutchie.git-graph",
+            "miguelsolorio.fluent-icons",
+            "mikeburgh.xml-format",
+            "mikestead.dotenv",
+            "mindaro-dev.file-downloader",
+            "mindaro.mindaro",
+            "mkxml.vscode-filesize",
+            "ms-azuretools.vscode-docker",
+            "ms-kubernetes-tools.vscode-kubernetes-tools",
+            "ms-vscode.atom-keybindings",
+            "ms-vsliveshare.vsliveshare",
+            "msjsdiag.debugger-for-chrome",
+            "mushan.vscode-paste-image",
+            "mutantdino.resourcemonitor",
+            "nepaul.editorconfiggenerator",
+            "nhoizey.gremlins",
+            "oouo-diogo-perdigao.docthis",
+            "piotrpalarz.vscode-gitignore-generator",
+            "PKief.material-icon-theme",
+            "quicktype.quicktype",
+            "raynigon.nginx-formatter",
+            "rebornix.project-snippets",
+            "redhat.vscode-yaml",
+            "ritwickdey.LiveServer",
+            "royaction.color-manager",
+            "rvest.vs-code-prettier-eslint",
+            "shardulm94.trailing-spaces",
+            "SimonSiefke.svg-preview",
+            "sleistner.vscode-fileutils",
+            "snyk-security.vscode-vuln-cost",
+            "spmeesseman.vscode-taskexplorer",
+            "stackbreak.comment-divider",
+            "steoates.autoimport",
+            "stkb.rewrap",
+            "streetsidesoftware.code-spell-checker",
+            "thekarel.open-spec-file",
+            "thomascsd.vscode-readme-pattern",
+            "Tim-Koehler.helm-intellisense",
+            "tombonnike.vscode-status-bar-format-toggle",
+            "tomoki1207.pdf",
+            "Tyriar.shell-launcher",
+            "Tyriar.sort-lines",
+            "vincaslt.highlight-matching-tag",
+            "visualstudioexptteam.vscodeintellicode",
+            "waderyan.gitblame",
+            "wanfu.jump-to-alias-file",
+            "wholroyd.jinja",
+            "wix.vscode-import-cost",
+            "wmaurer.change-case",
+            "yatki.vscode-surround",
+            "ysemeniuk.emmet-live",
+            "yzane.markdown-pdf",
+            "yzhang.markdown-all-in-one",
+            "ZainChen.json",
+            "ziyasal.vscode-open-in-github"
+        ]
+    ],
+    "angular": [
+        "angular.ng-template",
+        "hardikpthv.ngrxsnippets",
+        "infinity1207.angular2-switcher",
+        "johnpapa.angular2",
+        "mikael.angular-beastcode",
+        "simontest.simontest"
+    ],
+    "aws": [
+        "amazonwebservices.aws-toolkit-vscode"
+    ],
+    "babel": [ "mgmcdermott.vscode-language-babel" ],
+    "fauna": [],
+    "firebase": [],
+    "graphql": [
+        "apollographql.vscode-apollo",
+        "graphql.vscode-graphql",
+        "kumar-harsh.graphql-for-vscode"
+    ],
+    "html": [
+        "abusaidm.html-snippets",
+        "ecmel.vscode-html-css",
+        "sidthesloth.html5-boilerplate",
+        "tht13.html-preview-vscode"
+    ],
+    "ionic": [],
+    "java": [],
+    "javascript": [
+        "wallabyjs.quokka-vscode",
+        "xabikos.javascriptsnippets"
+    ],
+    "jquery": [
+        "donjayamanne.jquerysnippets"
+    ],
+    "mongo": [
+        "mongodb.mongodb-vscode",
+        "roerohan.mongo-snippets-for-node-js"
+    ],
+    "mssql": [ "ms-mssql.mssql" ],
+    "nestjs": [
+        "ashinzekene.nestjs"
+    ],
+    "npm": [
+        "christian-kohler.npm-intellisense",
+        "eg2.vscode-npm-script",
+        "leizongmin.node-module-intellisense",
+        "pflannery.vscode-versionlens"
+    ],
+    "nrwl": [
+        "nrwl.angular-console",
+        "ng-42.ng-fortytwo-vscode-extension"
+    ],
+    "python": [
+        "donjayamanne.python-extension-pack",
+        "ms-toolsai.jupyter"
+    ],
+    "react": [
+        "dsznajder.es7-react-js-snippets",
+        "equimper.react-native-react-redux"
+    ],
+    "react-native": [
+        "msjsdiag.vscode-react-native",
+        "burkeholland.simple-react-snippets"
+    ],
+    "react-styles": [
+        "jpoissonnier.vscode-styled-components"
+    ],
+    "redis": [
+        "cweijan.vscode-redis-client"
+    ],
+    "sql": [ "mtxr.sqltools" ],
+    "sqlite": [ "alexcvzz.vscode-sqlite" ],
+    "styles": [
+        "dzhavat.css-flexbox-cheatsheet",
+        "lihui.vs-color-picker",
+        "pranaygp.vscode-css-peek",
+        "syler.sass-indented",
+        "sasa.vscode-sass-format",
+        "stylelint.vscode-stylelint"
+    ],
+    "typescript": [
+        "rbbit.typescript-hero",
+        "pmneo.tsimporter"
+    ],
+    "tests": [
+        "andys8.jest-snippets",
+        "asvetliakov.snapshot-tools",
+        "firsttris.vscode-jest-runner",
+        "kavod-io.vscode-jest-test-adapter",
+        "lourenci.go-to-spec",
+        "orta.vscode-jest"
+    ],
+    "others": [
+        "sonarsource.sonarlint-vscode"
+    ]
+}
