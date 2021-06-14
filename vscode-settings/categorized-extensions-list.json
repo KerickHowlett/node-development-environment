@@ -122,12 +122,14 @@
         "mikael.angular-beastcode",
         "simontest.simontest"
     ],
-    "aws": [
-        "amazonwebservices.aws-toolkit-vscode"
-    ],
+    "aws": [ "amazonwebservices.aws-toolkit-vscode" ],
     "babel": [ "mgmcdermott.vscode-language-babel" ],
-    "fauna": [],
-    "firebase": [],
+    "fauna": [ "fauna.fauna" ],
+    "firebase": [
+        "hasanakg.firebase-snippets",
+        "jsayol.firebase-explorer",
+        "toba.vsfire"
+    ],
     "graphql": [
         "apollographql.vscode-apollo",
         "graphql.vscode-graphql",
@@ -139,23 +141,27 @@
         "sidthesloth.html5-boilerplate",
         "tht13.html-preview-vscode"
     ],
-    "ionic": [],
-    "java": [],
+    "ionic": [
+        "danielehrhardt.ionic3-vs-ionview-snippets",
+        "fivethree.vscode-ionic-snippets",
+        "fivethree.vscode-ionic-snippets",
+        "idleberg.icon-fonts",
+        "ionic-preview.ionic-preview",
+        "msjsdiag.cordova-tools",
+        "thavarajan.ionic2"
+    ],
+    "java": [ "vscjava.vscode-java-pack" ],
     "javascript": [
         "wallabyjs.quokka-vscode",
         "xabikos.javascriptsnippets"
     ],
-    "jquery": [
-        "donjayamanne.jquerysnippets"
-    ],
+    "jquery": [ "donjayamanne.jquerysnippets" ],
     "mongo": [
         "mongodb.mongodb-vscode",
         "roerohan.mongo-snippets-for-node-js"
     ],
     "mssql": [ "ms-mssql.mssql" ],
-    "nestjs": [
-        "ashinzekene.nestjs"
-    ],
+    "nestjs": [ "ashinzekene.nestjs" ],
     "npm": [
         "christian-kohler.npm-intellisense",
         "eg2.vscode-npm-script",
@@ -178,12 +184,8 @@
         "msjsdiag.vscode-react-native",
         "burkeholland.simple-react-snippets"
     ],
-    "react-styles": [
-        "jpoissonnier.vscode-styled-components"
-    ],
-    "redis": [
-        "cweijan.vscode-redis-client"
-    ],
+    "react-styles": [ "jpoissonnier.vscode-styled-components" ],
+    "redis": [ "cweijan.vscode-redis-client" ],
     "sql": [ "mtxr.sqltools" ],
     "sqlite": [ "alexcvzz.vscode-sqlite" ],
     "styles": [
@@ -206,7 +208,5 @@
         "lourenci.go-to-spec",
         "orta.vscode-jest"
     ],
-    "others": [
-        "sonarsource.sonarlint-vscode"
-    ]
+    "others": [ "sonarsource.sonarlint-vscode" ]
 }

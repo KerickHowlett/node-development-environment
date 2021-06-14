@@ -1,14 +1,14 @@
 version: '3.8'
 
 services:
-    nrwl-challenge-development-environment:
+    angular-development-environment:
         build:
             context: .
             dockerfile: Dockerfile
         env_file: .env
-        image: nrwl-challenge-development-environment-${BUILD_VERSION}
-        container_name: nrwl-challenge-development-environment
-        hostname: nrwl-challenge-development-environment
+        image: angular-development-environment-${BUILD_VERSION}
+        container_name: angular-development-environment
+        hostname: angular-development-environment
         init: true
         privileged: true
         volumes:
@@ -16,9 +16,9 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock:cached
             - $DOCKER_DATA:/var/lib/docker
         networks:
-            - nrwl-challenge-development-network
+            - angular-development-network
 
 networks:
-    nrwl-challenge-development-network:
-        name: nrwl-challenge-development-network
+    angular-development-network:
+        name: angular-development-network
         driver: bridge

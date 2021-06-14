@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+    react-express-development-environment:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        env_file: .env
+        image: react-express-development-environment-${BUILD_VERSION}
+        container_name: react-express-development-environment
+        hostname: react-express-development-environment
+        init: true
+        privileged: true
+        volumes:
+            - ..:/workspace:cached
+            - /var/run/docker.sock:/var/run/docker.sock:cached
+            - $DOCKER_DATA:/var/lib/docker
+        networks:
+            - react-express-development-network
+
+networks:
+    react-express-development-network:
+        name: react-express-development-network
+        driver: bridge
