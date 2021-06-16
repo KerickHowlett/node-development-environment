@@ -71,6 +71,7 @@
 		"jakebathman.nginx-log-highlighter",
 		"johnpapa.read-time",
 		"johnpapa.winteriscoming",
+		"johnpapa.winteriscoming",
 		"jpoissonnier.vscode-styled-components",
 		"kameshkotwani.google-search",
 		"kavod-io.vscode-jest-test-adapter",
@@ -153,7 +154,10 @@
 		"yzane.markdown-pdf",
 		"yzhang.markdown-all-in-one",
 		"ZainChen.json",
-		"ziyasal.vscode-open-in-github"
+		"ziyasal.vscode-open-in-github",
+        "equinusocio.vsc-material-theme-icons",
+        "miguelsolorio.fluent-icons",
+        "pkief.material-icon-theme"
 	],
     "forwardPorts": [ 3000, 5000 ],
     "postCreateCommand": "yarn install",
